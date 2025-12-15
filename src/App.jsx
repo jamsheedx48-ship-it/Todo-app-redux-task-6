@@ -23,7 +23,7 @@ function App() {
     }
   return (
     <div>
-         
+         <h1 style={{textAlign:'center'}}>Todo App</h1>
          <input type='text' placeholder='enter tasks'value={text} onChange={(e)=>setText(e.target.value)}/>
          <button onClick={handleAdd}>{editid ? "UPDATE" : "ADD"}</button>
 
@@ -31,7 +31,7 @@ function App() {
           {todos.map((t)=>(
            <li key={t.id}>
              {t.text}
-          <button onClick={()=>dispatch(removeTask(t.id))}>delete</button>
+          <button onClick={()=>dispatch(removeTask(t.id))}></button>
           <button onClick={()=>{
             setEditid(t.id);
             setText(t.text);
