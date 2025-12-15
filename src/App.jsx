@@ -23,7 +23,7 @@ function App() {
     }
   return (
     <div>
-         <h1>TODO APP</h1>
+         
          <input type='text' placeholder='enter tasks'value={text} onChange={(e)=>setText(e.target.value)}/>
          <button onClick={handleAdd}>{editid ? "UPDATE" : "ADD"}</button>
 
